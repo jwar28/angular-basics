@@ -7,36 +7,18 @@ indent_style = space
 indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true
-max_line_length = 90
-
-[*.{html,css,scss,js,jsx,json,ts,tsx,md,conf}]
-indent_size = 2
-
-[Makefile]
-indent_size = 8
-indent_style = tab
-insert_final_newline = false
+max_line_length = 95
 
 [*.md]
-max_line_length = 0
+max_line_length = off
 trim_trailing_whitespace = false
 
-[*.{ts, tsx, js, jsx}]
-quote_type = single
+[*.cs]
+indent_size = 4
+dotnet_sort_system_directives_first = true
 
-[*.java]
-max_line_length = 120
-end_of_line = lf
+[*.html]
+indent_size = 4
 
-[{*.bash,*.sh,*.zsh}]
-indent_size = 2
-tab_width = 2
-
-[{*.har,*.json}]
-indent_size = 2
-
-[{*.yaml,*.yml}]
-indent_size = 2
-
-[COMMIT_EDITMSG]
-max_line_length = 0
+[*.ts]
+indent_size = 4
